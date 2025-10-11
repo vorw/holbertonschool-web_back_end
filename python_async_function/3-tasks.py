@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Create an asyncio.Task from wait_random."""
+"""Return an asyncio.Task that wraps wait_random."""
 
 
 import asyncio
-from 0_basic_async_syntax import wait_random
+
+wait_random = __import__('0-basic_async_syntax').wait_random
 
 
 def task_wait_random(max_delay: int) -> asyncio.Task:
