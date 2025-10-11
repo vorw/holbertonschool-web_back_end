@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Takes string k and int/float v, returns tuple (k, v²)."""
+"""Takes string k and int/float v, returns tuple (k, v)."""
 
 from typing import Tuple, Union
 
