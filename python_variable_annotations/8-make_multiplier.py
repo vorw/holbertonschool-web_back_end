@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Takes float multiplier, returns a function that multiplies floats."""
 
+
 from typing import Callable
 
 
@@ -11,5 +12,4 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
         """Multiplies n by multiplier."""
         return n * multiplier
 
-    return multiply
-    
+    return multiply    
