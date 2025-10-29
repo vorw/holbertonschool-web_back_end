@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""provides stats about Nginx logs stored in db"""
+"""provides stats about Nginx logs stored in MongoDB"""
 
 
 from pymongo import MongoClient
 
 
 def main():
-    """Print required stats"""
+    """prints required stats from logs.nginx collection"""
     client = MongoClient("mongodb://127.0.0.1:27017")
     collection = client.logs.nginx
 
