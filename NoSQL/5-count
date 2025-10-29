@@ -1,0 +1,2 @@
+//print count of docs
+print(db.school.count());
